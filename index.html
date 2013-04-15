@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tokyo Amesh Viewer"/>
+
+    <title>Tokyo Amesh</title>
+
+    <link rel="stylesheet" href="./css/jquery.mobile-1.1.0.css"/>
+    <script type="text/javascript" src="./js/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="./js/jquery.mobile-1.1.0.js"></script>
+    <script type="text/javascript" src="./js/amesh.js"></script>    
+    <script type="text/javascript" src="./js/control.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+        <div data-role="page" id="page1">
+            <div data-role="header">
+                <h1>Tokyo Amesh</h1>
+            </div>
+            <div data-role="content">
+                <div class="div-widget" id="mapArea">
+           			<canvas id="canvas"></canvas>
+					<div id='date'>2013</div>
+				</div>
+
+				<div id="slider">
+					<label for="slider-range"></label>
+					<input type="range" id="slider-range" value="23" min="0" max="23" step="1">
+				</div>
+				<div id='buttons'>
+					<a data-role="button" id="small" data-transition="none" data-inline="true">Small</a>
+					<a data-role="button" id="large" data-transition="none" data-inline="true">Large</a>
+            	</div>
+            </div>
+        </div>
+    </body>
+</html>
